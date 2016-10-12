@@ -13,4 +13,5 @@ const Jeu = require('./lib/Jeu');
 let jeu = new Jeu({
     max: 100
 });
+
 jeu.jouer();

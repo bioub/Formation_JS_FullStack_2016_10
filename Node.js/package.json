@@ -1,0 +1,6 @@
+{
+  "name": "exemple-nodejs",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

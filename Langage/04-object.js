@@ -183,6 +183,7 @@ console.log(romain instanceof Formateur);
 console.log(romain instanceof Contact);
 console.log(romain instanceof Object);
 
+// Class en ES6
 class Voiture {
     constructor(marque) {
         this.marque = marque;
