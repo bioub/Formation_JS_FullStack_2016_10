@@ -1,0 +1,30 @@
+{
+  "name": "address-book",
+  "dependencies": {
+    "jspm": "^0.16.46"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-systemjs-builder": "^0.2.7",
+    "grunt-usemin": "^3.1.1"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "src/client"
+    },
+    "dependencies": {
+      "bootstrap": "github:twbs/bootstrap@^3.3.7",
+      "moment": "npm:moment@^2.15.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

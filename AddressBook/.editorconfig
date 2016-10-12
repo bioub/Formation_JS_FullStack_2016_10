@@ -1,0 +1,9 @@
+[*]
+indent = space
+indent = 2
+end_of_line = lf
+insert_final_newline = true
+
+[*.{css,js,html}]
+indent_size = 2
+
