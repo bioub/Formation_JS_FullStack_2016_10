@@ -1,0 +1,12 @@
+{
+  "generator-ng-fullstack": {
+    "username": "bioub",
+    "appName": "squelette-fullstack",
+    "stack": "fullstack",
+    "server": "node",
+    "client": "ng1",
+    "transpilerServer": "node",
+    "secure": false,
+    "differentStaticServer": false
+  }
+}

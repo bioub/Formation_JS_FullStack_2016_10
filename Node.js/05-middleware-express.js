@@ -24,18 +24,24 @@ server.get('/', (req, res, next) => {
 });
 
 server.get('/', (req, res) => {
-    res.end('<b>Hello Callback 2</b>');
+    res.write('<b>Hello Callback 2</b>');
+}, (req, res) => {
+    res.end('<b>Hello Callback 3</b>');
 });
 
 server.get('/toto', (req, res) => {
     res.send('<b>Hello Toto</b>');
 });
 
+// Middleware 404
 server.use((req, res, next) => {
-    res.statusCode = 404;
-    res.send('Erreur 404');
+    next({
+        statusCode: 404,
+        message:'Erreur 404'
+    });
 });
 
+// Middleware Erreur
 server.use((err, req, res, next) => {
     res.statusCode = err.statusCode || 500;
     res.send(err.message);

@@ -26,7 +26,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'src/',
-          src: ['client/*.html', 'client/config.js', 'client/jspm_packages/system.js'],
+          src: ['server/**', 'client/*.html', 'client/config.js', 'client/jspm_packages/system.js', 'client/jspm_packages/system.js.map'],
           dest: 'dist/'
         }]
       }

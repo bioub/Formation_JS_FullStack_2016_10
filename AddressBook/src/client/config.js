@@ -14,6 +14,9 @@ System.config({
   },
 
   map: {
+    "angular": "npm:angular@1.5.8",
+    "angular-resource": "npm:angular-resource@1.5.8",
+    "angular-ui-router": "npm:angular-ui-router@0.3.1",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "bootstrap": "github:twbs/bootstrap@3.3.7",
@@ -39,6 +42,10 @@ System.config({
     },
     "github:twbs/bootstrap@3.3.7": {
       "jquery": "npm:jquery@3.1.1"
+    },
+    "npm:angular-ui-router@0.3.1": {
+      "angular": "npm:angular@1.5.8",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:assert@1.4.1": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
   <meta charset="UTF-8">
   <title>AddressBook</title>
@@ -30,8 +30,18 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<main class="container">
-
+<main class="container" ng-controller="ContactListCtrl">
+  <h2>Liste des contacts</h2>
+  <table class="table table-striped">
+    <tr ng-repeat="c in contacts">
+      <td>{{c.prenom}} {{c.nom}}</td>
+      <td>
+        <a href="" class="btn btn-xs btn-info">Afficher</a>
+        <a href="" class="btn btn-xs btn-warning">Modifier</a>
+        <a href="" class="btn btn-xs btn-danger">Supprimer</a>
+      </td>
+    </tr>
+  </table>
 </main>
 <footer class="container">
   <hr>
